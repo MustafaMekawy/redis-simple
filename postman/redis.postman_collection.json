@@ -9,8 +9,27 @@
 		{
 			"name": "add",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\":\"ahmed\" ,\r\n    \"last_name\": \"3mad\" ,\r\n    \"email\":  \"ahmed@gamil.com\" ,\r\n    \"gender\": \"Male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}api/v1/person",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"v1",
+						"person"
+					]
+				}
 			},
 			"response": [
 				{
@@ -80,7 +99,17 @@
 			"name": "get all",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "{{url}}api/v1/person",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"v1",
+						"person"
+					]
+				}
 			},
 			"response": [
 				{
@@ -134,6 +163,246 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"status\": \"sucsuss\",\n    \"data\": [\n        {\n            \"id\": \"1\",\n            \"first_name\": \"Catherine\",\n            \"last_name\": \"McLucky\",\n            \"email\": \"cmclucky0@lycos.com\",\n            \"gender\": \"Female\"\n        },\n        {\n            \"id\": \"2\",\n            \"first_name\": \"Monah\",\n            \"last_name\": \"Syrie\",\n            \"email\": \"msyrie1@bbb.org\",\n            \"gender\": \"Female\"\n        },\n        {\n            \"id\": \"3\",\n            \"first_name\": \"Thorin\",\n            \"last_name\": \"Pressey\",\n            \"email\": \"tpressey2@soundcloud.com\",\n            \"gender\": \"Male\"\n        },\n        {\n            \"id\": \"4\",\n            \"first_name\": \"Maggee\",\n            \"last_name\": \"Alty\",\n            \"email\": \"malty3@amazon.co.uk\",\n            \"gender\": \"Female\"\n        },\n        {\n            \"id\": \"5\",\n            \"first_name\": \"Lark\",\n            \"last_name\": \"Halpin\",\n            \"email\": \"lhalpin4@vkontakte.ru\",\n            \"gender\": \"Female\"\n        },\n        {\n            \"id\": \"6\",\n            \"first_name\": \"Jourdan\",\n            \"last_name\": \"Bevens\",\n            \"email\": \"jbevens5@nifty.com\",\n            \"gender\": \"Female\"\n        },\n        {\n            \"id\": \"7\",\n            \"first_name\": \"Cherry\",\n            \"last_name\": \"Medcalfe\",\n            \"email\": \"cmedcalfe6@behance.net\",\n            \"gender\": \"Female\"\n        },\n        {\n            \"id\": \"8\",\n            \"first_name\": \"Ronna\",\n            \"last_name\": \"Poznan\",\n            \"email\": \"rpoznan7@over-blog.com\",\n            \"gender\": \"Female\"\n        },\n        {\n            \"id\": \"9\",\n            \"first_name\": \"Skippie\",\n            \"last_name\": \"Jamot\",\n            \"email\": \"sjamot8@networksolutions.com\",\n            \"gender\": \"Male\"\n        },\n        {\n            \"id\": \"10\",\n            \"first_name\": \"Deeann\",\n            \"last_name\": \"Male\",\n            \"email\": \"dmale9@ask.com\",\n            \"gender\": \"Female\"\n        },\n        {\n            \"id\": \"11\",\n            \"first_name\": \"Thayne\",\n            \"last_name\": \"Raynard\",\n            \"email\": \"traynarda@vimeo.com\",\n            \"gender\": \"Male\"\n        },\n        {\n            \"id\": \"12\",\n            \"first_name\": \"Randie\",\n            \"last_name\": \"Gorgler\",\n            \"email\": \"rgorglerb@theguardian.com\",\n            \"gender\": \"Male\"\n        },\n        {\n            \"id\": \"13\",\n            \"first_name\": \"Ina\",\n            \"last_name\": \"Marcham\",\n            \"email\": \"imarchamc@sciencedirect.com\",\n            \"gender\": \"Female\"\n        },\n        {\n            \"id\": \"14\",\n            \"first_name\": \"Ikey\",\n            \"last_name\": \"Warrack\",\n            \"email\": \"iwarrackd@devhub.com\",\n            \"gender\": \"Male\"\n        },\n        {\n            \"id\": \"15\",\n            \"first_name\": \"Glynnis\",\n            \"last_name\": \"Bader\",\n            \"email\": \"gbadere@ycombinator.com\",\n            \"gender\": \"Female\"\n        },\n        {\n            \"id\": \"16\",\n            \"first_name\": \"Olly\",\n            \"last_name\": \"Turpin\",\n            \"email\": \"oturpinf@lulu.com\",\n            \"gender\": \"Female\"\n        },\n        {\n            \"id\": \"17\",\n            \"first_name\": \"Brandie\",\n            \"last_name\": \"Hardy-Piggin\",\n            \"email\": \"bhardypigging@earthlink.net\",\n            \"gender\": \"Female\"\n        },\n        {\n            \"id\": \"18\",\n            \"first_name\": \"Katinka\",\n            \"last_name\": \"Hasnip\",\n            \"email\": \"khasniph@adobe.com\",\n            \"gender\": \"Female\"\n        },\n        {\n            \"id\": \"19\",\n            \"first_name\": \"Myrwyn\",\n            \"last_name\": \"Cavnor\",\n            \"email\": \"mcavnori@howstuffworks.com\",\n            \"gender\": \"Male\"\n        },\n        {\n            \"id\": \"20\",\n            \"first_name\": \"Goldie\",\n            \"last_name\": \"Banstead\",\n            \"email\": \"gbansteadj@bandcamp.com\",\n            \"gender\": \"Female\"\n        },\n        {\n            \"id\": \"21\",\n            \"first_name\": \"Marcello\",\n            \"last_name\": \"Longfoot\",\n            \"email\": \"mlongfootk@shutterfly.com\",\n            \"gender\": \"Male\"\n        },\n        {\n            \"id\": \"22\",\n            \"first_name\": \"Farley\",\n            \"last_name\": \"Higgan\",\n            \"email\": \"fhigganl@cnbc.com\",\n            \"gender\": \"Male\"\n        },\n        {\n            \"id\": \"23\",\n            \"first_name\": \"mustafa\",\n            \"last_name\": \"mekawy\",\n            \"email\": \"mustafa@gamil.com\",\n            \"gender\": \"Male\"\n        },\n        {\n            \"id\": \"24\",\n            \"first_name\": \"ahmed\",\n            \"last_name\": \"3mad\",\n            \"email\": \"ahmed@gamil.com\",\n            \"gender\": \"Male\"\n        },\n        {\n            \"id\": \"25\",\n            \"first_name\": \"ahmed\",\n            \"last_name\": \"3mad\",\n            \"email\": \"ahmed@gamil.com\",\n            \"gender\": \"Male\"\n        },\n        {\n            \"id\": \"26\",\n            \"first_name\": \"ahmed\",\n            \"last_name\": \"3mad\",\n            \"email\": \"ahmed@gamil.com\",\n            \"gender\": \"Male\"\n        }\n    ],\n    \"message\": \"get all persons\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get single",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}api/v1/person/21",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"v1",
+						"person",
+						"21"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sucsses",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/person/15",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"person",
+								"15"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "157"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9d-um6RknXUd8lwn2Ka/49F2uAOPr4\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Aug 2023 15:23:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"data\": [\n        {\n            \"id\": \"15\",\n            \"first_name\": \"Glynnis\",\n            \"last_name\": \"Bader\",\n            \"email\": \"gbadere@ycombinator.com\",\n            \"gender\": \"Female\"\n        }\n    ],\n    \"message\": \"get user\"\n}"
+				},
+				{
+					"name": "wrong",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/person/1999",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"person",
+								"1999"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "43"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2b-QZvHAjQqQfwBVaabEklRFwnjbMU\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Aug 2023 15:27:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"error\",\n    \"error\": \"user not exist\"\n}"
+				}
+			]
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}api/v1/person/22",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"v1",
+						"person",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \r\n    \"first_name\": \"ahmed\" \r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}api/v1/person/21",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"v1",
+						"person",
+						"21"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sucsess",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n    \"first_name\": \"ahmed\" \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/v1/person/21",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"person",
+								"21"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "151"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"97-qT5Hqpu7e5ntAYfbjTPrwCQgTQE\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 10 Aug 2023 15:59:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"data\": [\n        {\n            \"id\": \"21\",\n            \"first_name\": \"ahmed\",\n            \"last_name\": \"mahmoud\",\n            \"email\": \"ahmed@gamil.com\",\n            \"gender\": \"Male\"\n        }\n    ],\n    \"message\": \"user updated\"\n}"
 				}
 			]
 		}
